@@ -1,13 +1,32 @@
 import { useState } from 'react'
+import axios from 'axios'
+import { ToastContainer, toast, Slide, Zoom, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
 import ofcAminatedPic from '../Assets/services-removebg-preview 2.png'
+
 
 const Main = () => {
     const [queryForm, setQueryForm] = useState({name: "", email: "", subject: "", phone: "", query: ""})
     const handleQueryForm = (params) => (e) => {
         setQueryForm({...queryForm, [params]: e.target.value})
-        console.log(queryForm)
     }
+
+    const submitQueryForm = async (e) => {
+        e.preventDefault()
+        if(!queryForm.name || !queryForm.email || !queryForm.subject || !queryForm.phone || !queryForm.query){
+            return toast.error("All the fields are mandatory!")
+        }
+        await axios.post("https://basic-start-up-ketan-assignment.onrender.com/contactus", queryForm)
+            .then((res) => {
+              console.log(res.data)
+              setQueryForm({name: "", email: "", subject: "", phone: "", query: ""})
+            })
+            .catch((err) => {
+              console.log(err)
+            })
+    }
+
     return (
         <>
             <div className="back  offset" id="Home">
@@ -350,20 +369,28 @@ const Main = () => {
                     <h6> contact us for any queries </h6>
                     <div className="form">
                         <div className="first-row">
-                            <input type="text" placeholder="Name" name="" onChange={handleQueryForm('name')}/>
-                            <input type="email" placeholder="Email" name="" onChange={handleQueryForm('email')}/>
+                            <input type="text" placeholder="Name" name="" onChange={handleQueryForm('name')} value={queryForm.name}/>
+                            <input type="email" placeholder="Email" name="" onChange={handleQueryForm('email')} value={queryForm.email}/>
                         </div>
                         <div className="second-row">
-                            <input type="text" placeholder="Subject" name="" onChange={handleQueryForm('subject')}/>
-                            <input type="text" placeholder="phone" name="" onChange={handleQueryForm('phone')}/>
+                            <input type="text" placeholder="Subject" name="" onChange={handleQueryForm('subject')} value={queryForm.subject}/>
+                            <input type="text" placeholder="phone" name="" onChange={handleQueryForm('phone')} value={queryForm.phone}/>
                         </div>
-                        <textarea placeholder="Services you are looking for " rows="5" onChange={handleQueryForm('query')}></textarea>
+                        <textarea placeholder="Services you are looking for " rows="5" onChange={handleQueryForm('query')} value={queryForm.query}></textarea>
                         <ul className="contact-btn">
-                            <li><button className="main-btn btn-two queryformSubmitBtn">Submit </button></li>
+                            <li><button className="main-btn btn-two queryformSubmitBtn" onClick={submitQueryForm}>Submit </button></li>
                         </ul>
                     </div>
                 </section>
             </section>
+            <ToastContainer
+        autoClose={1500}
+        transition={Slide}
+        limit={5}
+        theme={"light"}
+        pauseOnFocusLoss={false}
+        position={"top-center"}
+      />
         </>
     )
 }

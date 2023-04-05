@@ -10,7 +10,8 @@ const Query = require('./models/queryModel.js')
 
 app.get("/", async (request, response) => {
     try{
-        response.json({message: 'welcome to Adiya'})
+        const data = await Query.find()
+        response.json(data)
     }
     catch(err){
         response.sendStatus(500).json({message: err})
