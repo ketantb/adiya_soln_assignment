@@ -34,7 +34,8 @@ li{
 }
 
 h3{
-    font-size: 44px;
+    /* font-size: 44px; */
+    font-size: 32px;
     line-height: 55px;
     color: #121212;
     font-weight: 600;
@@ -75,7 +76,8 @@ h6{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem 6.5rem;
+    /* padding: 1rem 6.5rem; */
+    padding: 1rem 6.5rem 0rem 6.5rem;
     background: transparent;
     transition: all 0.5s ease;
     z-index: 10000;
@@ -145,6 +147,11 @@ outline: none;
     color:#6c6c6c;
 }
 
+.header-btns{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 
 
@@ -153,7 +160,6 @@ outline: none;
     flex-direction: row;
     justify-content:center;
     align-items: center
-
 }
 
 .navbar-social ul li {
@@ -162,7 +168,7 @@ outline: none;
 
 .navbar-social ul li button{
     color:#6c6c6c;
-    font-size: 22px;
+    font-size: 22spx;
 }
 
 
@@ -323,10 +329,12 @@ background-position: right center;
 .What-we-do{
     display: block;
     text-align: center;
-    margin-bottom: 10rem;
-
+    /* margin-bottom: 10rem; */
 }
 
+.What-we-do-3{
+    margin-bottom: 10rem;
+}
 
 .What-we-do h6{
     margin-bottom: 6rem;
@@ -614,7 +622,7 @@ footer{
 }
 
 .row-two h6{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 18px;
   color: #6c6c6c;
@@ -622,15 +630,19 @@ footer{
 
 }
 .row-two li button{
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 24px;
-    font-weight: 500;
     color:#121212;
 }
 .row-two li {
 padding-bottom: 12px;
 }
 
+#fbIcon{
+    padding-top: 15px;
+    padding-left: 5px;
+}
 
 .newsletter{
     display: flex;
@@ -673,6 +685,15 @@ padding-bottom: 12px;
 
 }
 
+.footer-btns{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-btns:hover{
+    color: #0067f4;
+}
 
 .text{
     margin-top: 16px;
@@ -800,6 +821,10 @@ width: 95%;
 }
 footer{
     padding: 1rem;
+}
+
+h3{
+    font-size: 28px;
 }
 
 }

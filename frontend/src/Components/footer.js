@@ -12,7 +12,7 @@ const Footer = () => {
                     <span>Follow us: </span>
                     <ul>
                         <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
-                            <img src={fbIcon}/></a>
+                            <img id='fbIcon' src={fbIcon}/></a>
                     </ul>
                 </div>
 
@@ -20,10 +20,10 @@ const Footer = () => {
                     <div className="column-1">
                         <h6 className="footer-title">Company</h6>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">service</a></li>
-                            <li><a href="#">What we do</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><button className='footer-btns'>Home</button></li>
+                            <li><button className='footer-btns'>service</button></li>
+                            <li><button className='footer-btns'>What we do</button></li>
+                            <li><button className='footer-btns'>contact</button></li>
                         </ul>
                     </div>
                     <div className="row-three">

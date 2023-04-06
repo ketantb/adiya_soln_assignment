@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
-import { ToastContainer, toast, Slide, Zoom, Bounce } from 'react-toastify';
+import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
 import ofcAminatedPic from '../Assets/services-removebg-preview 2.png'
@@ -21,6 +21,7 @@ const Main = () => {
             .then((res) => {
               console.log(res.data)
               setQueryForm({name: "", email: "", subject: "", phone: "", query: ""})
+              return toast.success("We will get back to you soon!")
             })
             .catch((err) => {
               console.log(err)
@@ -29,6 +30,13 @@ const Main = () => {
 
     return (
         <>
+        <ToastContainer
+        autoClose={1500}
+        limit={5}
+        theme={"light"}
+        pauseOnFocusLoss={false}
+        position={"top-center"}
+      />
             <div className="back  offset" id="Home">
                 <div className="overlay"></div>
                 <div className="hero-shape">
@@ -280,7 +288,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section id="What we do" className="What-we-do  offset">
+                <section id="What we do" className="What-we-do What-we-do-3  offset">
                     <div className="table">
                         <div className="Ideation-and-Evaluation ">
                             <div className="b-heading">
@@ -383,14 +391,6 @@ const Main = () => {
                     </div>
                 </section>
             </section>
-            <ToastContainer
-        autoClose={1500}
-        transition={Slide}
-        limit={5}
-        theme={"light"}
-        pauseOnFocusLoss={false}
-        position={"top-center"}
-      />
         </>
     )
 }

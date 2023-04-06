@@ -30,12 +30,10 @@ const Header = () => {
 
                 <div className="menu-bar">
                     <ul className="menu-items">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#service">Our Story</a></li>
-                        <li><a href="#What we do">What we do</a></li>
-                        <li><a href="#contact">contact</a></li>
-
-
+                        <li><button className='header-btns'>Home</button></li>
+                        <li><button className='header-btns'>Our Story</button></li>
+                        <li><button className='header-btns'>What we do</button></li>
+                        <li><button className='header-btns'>contact</button></li>
                     </ul>
                 </div>
 
