@@ -42,9 +42,11 @@ const Footer = () => {
                         <h6 className="footer-title">subscribe Newsletter </h6>
                         <div className="newsletter">
                             <input type="text" name="" placeholder="Your Email"/>
-                                <button type="submit"></button>
+                               <div>
+                               <button type="submit" className='subscribe-btn'>subscribe</button>
+                               </div>
                         </div>
-                        <p className="text">subscribe for weekly update.we dont send span </p>
+                        <p className="subscribe-text">subscribe for weekly update we wont send spam </p>
                     </div>
                 </div>
             </footer>

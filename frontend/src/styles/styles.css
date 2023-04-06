@@ -76,13 +76,11 @@ h6{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* padding: 1rem 6.5rem; */
     padding: 1rem 6.5rem 0rem 6.5rem;
     background: transparent;
     transition: all 0.5s ease;
     z-index: 10000;
     background-color: white;
-    
 }
 
 
@@ -502,7 +500,6 @@ background-position: right center;
     justify-content: space-between;
     align-items: center;
     margin: 25px 0 ;
-
 }
 
 .second-row{
@@ -519,7 +516,7 @@ background-position: right center;
     height: 55px;
     border:1px solid #cbced1;
     border-radius: 5px;
-    padding: 0 5px;
+    padding: 0px 25px;
     font-size: 16px;
     outline: none;
 }
@@ -530,7 +527,8 @@ background-position: right center;
     height: 56px;
     border:1px solid #cbced1;
     border-radius: 5px;
-    padding: 0 25px;
+    padding: 0px 25px;
+    /* padding-left: 15px; */
     font-size: 16px;
     outline: none;
 }
@@ -551,8 +549,6 @@ background-position: right center;
 .contact-btn{
     margin: 2rem auto;
     width: 170px;
-
-    
 }
 
 
@@ -561,18 +557,16 @@ background-position: right center;
     ,#535cF1,#A147E4);
     color:#fff;
     border:none;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: normal;
     outline: none;
-
-    
 }
 
 
 footer{
     background-color:#f4f6f7;
     padding: 7rem;
-
 }
 
 
@@ -603,11 +597,11 @@ footer{
 .row-two{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
 
@@ -645,10 +639,10 @@ padding-bottom: 12px;
 }
 
 .newsletter{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     position: relative;
     margin-top: 5px;
 }
@@ -699,7 +693,28 @@ padding-bottom: 12px;
     margin-top: 16px;
 }
 
+.subscribe-text{
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 5px;
+}
 
+.subscribe-btn{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 30%;
+    background-color: #0067f4;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover{
+    background-color: #003c8f;
+}
 
 @media (max-width:960px) {
     .nav{

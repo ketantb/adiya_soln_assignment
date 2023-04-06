@@ -12,12 +12,11 @@ const Header = () => {
                                 width="100%" />
                         </a>
                     </div>
-                    <div className="menue-icon">
+                    <div className="menue-icon" onClick={() => { }}>
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-
                 </div>
 
 
@@ -38,15 +37,13 @@ const Header = () => {
                 </div>
 
                 <div className="navbar-social">
-                    <span>Follow us </span>
+                    <span>Follow us {'>'}</span>
                     <ul>
                         <li><a href="#"></a></li>
                         <li><a href="#"></a></li>
                         <li><a href="#"></a></li>
                     </ul>
-
                 </div>
-
             </div>
         </>
     )
