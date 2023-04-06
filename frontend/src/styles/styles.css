@@ -67,9 +67,9 @@ h6{
     cursor: pointer;
     transition: all 0.4s ease-out 0s;
     z-index: 5;
-
 }
-.nav{
+
+/* .nav{
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -81,15 +81,15 @@ h6{
     transition: all 0.5s ease;
     z-index: 10000;
     background-color: white;
-}
+} */
 
 
 
-.navbar-toggler{
+/* .navbar-toggler{
 display: none;
 border:none ;
 outline: none;
-}
+} */
 
 
 .toggler-icon{
@@ -129,21 +129,19 @@ outline: none;
 }
 
 
-.navbar-social{
+/* .navbar-social{
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
+} */
 
-
-}
-
-.navbar-social span{
+/* .navbar-social span{
     color: black;
     font-size:18px;
     font-weight: 600;
     color:#6c6c6c;
-}
+} */
 
 .header-btns{
     background: transparent;
@@ -153,32 +151,33 @@ outline: none;
 
 
 
-.navbar-social ul{
+/* .navbar-social ul{
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center
-}
+} */
 
-.navbar-social ul li {
+/* .navbar-social ul li {
     margin: 0 7px;
-}
+} */
 
-.navbar-social ul li button{
+/* .navbar-social ul li button{
     color:#6c6c6c;
     font-size: 22spx;
-}
+} */
 
 
 .back{
-    background-image: url('../Assets/Screenshot\ \(560\).png');
-    /* background-image: url(images/Screenshot\ \(560\).png); */
+    z-index: -1;
+    /* background-image: url('../Assets/Screenshot\ \(560\).png'); */
+    background-image: url('../Assets/workplace.jpg');
     width: 100%;
     height:120vh ;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    
+    opacity: 0.3;
 }
 
 .overlay{
@@ -287,7 +286,30 @@ background-position: right center;
     margin: 5rem 7rem 10rem 7rem;
 }
 
+.socials{
+    display: flex;
+    margin-top: 10px;
+}
 
+.socials>ul{
+    margin-left: 10px;
+}
+
+.socials>ul:first-child>a{
+    color:#0077b5;
+}
+
+.socials>ul:nth-child(2)>a{
+    color: #4867aa;
+}
+
+.socials>ul:nth-child(3)>a{
+    color: #1da1f2;
+}
+
+.socials>ul:last-child>a{
+    color: rgb(246, 32, 164);
+}
 
 .service{
     display: flex;
@@ -296,10 +318,7 @@ background-position: right center;
     align-items: center;
     text-align: center;
     color: #1d1d1d;
-    margin-bottom: 10rem;
-    
-
-
+    margin-bottom: 2rem;
 }
 
 .service h4:hover{
@@ -310,12 +329,9 @@ background-position: right center;
     color: #4f47E4;
 }
 
-
-
-
 .service--img{
     width: 100%;
-    margin-top: 5%;  
+    margin-top: 7%;  
 }
 
 .service--img img{
@@ -408,7 +424,7 @@ background-position: right center;
 
 
 .calltoact{
-    background-image: linear-gradient(to right,rgba(255,0,0,0), #910AFA), url(../Assets/image\ 2.png);
+    background-image: linear-gradient(to right,rgba(255,0,0,0), #910AFA), url(../Assets/adult-cheerful-coffee-collaboration.jpg);
     /* background-image: linear-gradient(to right,rgba(255,0,0,0), #910AFA), url(images/image\ 2.png); */
     min-height: 500px;
     background-attachment: fixed;
@@ -583,6 +599,13 @@ footer{
     color: #6c6c6c;
 }
 
+.row-one>span{
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6c6c6c;
+}
+
 
 .row-one ul{
     display: flex;
@@ -702,7 +725,8 @@ padding-bottom: 12px;
     margin-top: 10px;
     margin-left: 5px;
     width: 30%;
-    background-color: #0067f4;
+    /* background-color: #0067f4; */
+    background-image: linear-gradient(to left, #535cf1,#A147E4);
     height: 35px;
     border-radius: 5px;
     border: none;
@@ -716,9 +740,9 @@ padding-bottom: 12px;
 }
 
 @media (max-width:960px) {
-    .nav{
+    /* .nav{
         padding: 1rem 2.5rem; 
-    }  
+    }   */
 
     #wrapper{
         margin: 3rem 4rem 7rem 7rem;
@@ -748,10 +772,10 @@ padding-bottom: 12px;
     justify-content: space-between;
     align-items: center;
 }
-.nav{
+/* .nav{
         flex-direction: column;   
         padding: 10px 5px;  
-}  
+}   */
 .menu-bar{
     width: 100%;
     background-color: rgb(244, 242, 239);
@@ -778,12 +802,12 @@ padding-bottom: 12px;
 background-color: rgb(212, 202, 186) ;
 }
 
-.navbar-social{
+/* .navbar-social{
 padding: 4px;
 width: 100%;
 background-color: rgb(222, 219, 219);
 display: none !important;
-}
+} */
 
 
 .menue-icon{    
@@ -804,7 +828,7 @@ display: none !important;
 }
 
     footer{
-        padding: 4rem;
+        /* padding: 4rem; */
     }
 
 
@@ -841,11 +865,28 @@ h3{
     font-size: 28px;
 }
 
+.socials>ul{
+    margin-left: 5px;
 }
 
-.navbar-social-active{
+.row-one{
+    /* padding-right: 20px; */
+    font-size: 22px;
+    color: #6c6c6c;
+}
+
+.row-one>span{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c6c6c;
+}
+
+}
+
+/* .navbar-social-active{
     display: flex !important;
-} 
+}  */
 
 .menu-bar-active{
     display:block;

@@ -5,11 +5,13 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from './Components/header';
 import Main from './Components/main';
 import Footer from './Components/footer';
+import Header1 from './Components/header1';
  
 function App()  {
   return (
     <>
-     <Header/>
+     {/* <Header/> */}
+     <Header1/>
      <Main/>
      <Footer/>
     </>

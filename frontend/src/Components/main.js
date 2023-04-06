@@ -1,44 +1,46 @@
 import { useState } from 'react'
 import axios from 'axios'
-import { ToastContainer, toast} from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
-import ofcAminatedPic from '../Assets/services-removebg-preview 2.png'
+// import ofcAnimatedPic from '../Assets/services-removebg-preview 2.png'
+import ofcAnimated from '../Assets/Happy.svg'
 import swal from 'sweetalert';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 const Main = () => {
-    const [queryForm, setQueryForm] = useState({name: "", email: "", subject: "", phone: "", query: ""})
+    const [queryForm, setQueryForm] = useState({ name: "", email: "", subject: "", phone: "", query: "" })
     const handleQueryForm = (params) => (e) => {
-        setQueryForm({...queryForm, [params]: e.target.value})
+        setQueryForm({ ...queryForm, [params]: e.target.value })
     }
 
     const submitQueryForm = async (e) => {
         e.preventDefault()
-        if(!queryForm.name || !queryForm.email || !queryForm.subject || !queryForm.phone || !queryForm.query){
+        if (!queryForm.name || !queryForm.email || !queryForm.subject || !queryForm.phone || !queryForm.query) {
             return toast.error("All the fields are mandatory!")
         }
         await axios.post("https://basic-start-up-ketan-assignment.onrender.com/contactus", queryForm)
             .then((res) => {
-              console.log(res.data)
-              setQueryForm({name: "", email: "", subject: "", phone: "", query: ""})
-              return swal("Submitted!", "We will get back to you soon!", "success");
+                console.log(res.data)
+                setQueryForm({ name: "", email: "", subject: "", phone: "", query: "" })
+                return swal("Submitted!", "We will get back to you soon!", "success");
             })
             .catch((err) => {
-              console.log(err)
+                console.log(err)
             })
     }
 
     return (
-        <>
-        <ToastContainer
-        autoClose={1500}
-        limit={5}
-        theme={"light"}
-        pauseOnFocusLoss={false}
-        position={"top-center"}
-      />
-            <div className="back  offset" id="Home">
+        <section>
+            <ToastContainer
+                autoClose={1500}
+                limit={5}
+                theme={"light"}
+                pauseOnFocusLoss={false}
+                position={"top-center"}
+            />
+            <div className="back  offset">
                 <div className="overlay"></div>
                 <div className="hero-shape">
                     <img src={wavePicture} />
@@ -53,7 +55,11 @@ const Main = () => {
 
                 </h6>
                 <ul className="header-btn">
-                    <li><button className="main-btn btn-one" href="#contact">Get in touch </button></li>
+                    <li>
+                        <AnchorLink href="#contact">
+                            <button className="main-btn btn-one">Get in touch</button>
+                        </AnchorLink>
+                    </li>
                     <li><button className="main-btn btn-two" href="#">our profile <i className="fa fa-play"></i></button></li>
                 </ul>
             </div>
@@ -64,6 +70,7 @@ const Main = () => {
 
 
             <section id="wrapper">
+                <span id="our-story"></span>
                 <section id="service" className="service offset ">
                     <h3> our Story</h3>
                     <h6>
@@ -76,7 +83,7 @@ const Main = () => {
                                     <div className="service-icon">
                                         <i className="fa fa-web "></i>
                                     </div>
-                                    <div className=" service-content">
+                                    <div className=" service-content" id="Home">
                                         <h4 className="service-title"> Welcome
                                         </h4>
                                         <p className="text">We at Adiya Business Solution makes
@@ -145,7 +152,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="service--img">
-                            <img src={ofcAminatedPic} />
+                            <img src={ofcAnimated} />
                         </div>
                     </div>
                 </section>
@@ -155,7 +162,7 @@ const Main = () => {
                     <h6>
                         Work of ours is focused on emerging technology
                     </h6>
-                    <div className="table">
+                    <div className="table" id="app-website-dev">
                         <div className="Ideation-and-Evaluation ">
                             <div className="b-heading">
                                 <h3>App And website Development</h3>
@@ -228,7 +235,7 @@ const Main = () => {
                 </section>
 
                 <section id="What we do" className="What-we-do  offset">
-                    <div className="table">
+                    <div className="table" id="crm-erp">
                         <div className="Ideation-and-Evaluation ">
                             <div className="b-heading">
                                 <h3>Pilot run and market fit testing</h3>
@@ -290,7 +297,7 @@ const Main = () => {
                 </section>
 
                 <section id="What we do" className="What-we-do What-we-do-3  offset">
-                    <div className="table">
+                    <div className="table" id="investment-deck">
                         <div className="Ideation-and-Evaluation ">
                             <div className="b-heading">
                                 <h3>Investment Deck</h3>
@@ -378,12 +385,12 @@ const Main = () => {
                     <h6> contact us for any queries </h6>
                     <div className="form">
                         <div className="first-row">
-                            <input type="text" placeholder="Name" name="" onChange={handleQueryForm('name')} value={queryForm.name}/>
-                            <input type="email" placeholder="Email" name="" onChange={handleQueryForm('email')} value={queryForm.email}/>
+                            <input type="text" placeholder="Name" name="" onChange={handleQueryForm('name')} value={queryForm.name} />
+                            <input type="email" placeholder="Email" name="" onChange={handleQueryForm('email')} value={queryForm.email} />
                         </div>
                         <div className="second-row">
-                            <input type="text" placeholder="Subject" name="" onChange={handleQueryForm('subject')} value={queryForm.subject}/>
-                            <input type="text" placeholder="phone" name="" onChange={handleQueryForm('phone')} value={queryForm.phone}/>
+                            <input type="text" placeholder="Subject" name="" onChange={handleQueryForm('subject')} value={queryForm.subject} />
+                            <input type="text" placeholder="phone" name="" onChange={handleQueryForm('phone')} value={queryForm.phone} />
                         </div>
                         <textarea placeholder="Services you are looking for " rows="5" onChange={handleQueryForm('query')} value={queryForm.query}></textarea>
                         <ul className="contact-btn">
@@ -392,7 +399,7 @@ const Main = () => {
                     </div>
                 </section>
             </section>
-        </>
+        </section>
     )
 }
 

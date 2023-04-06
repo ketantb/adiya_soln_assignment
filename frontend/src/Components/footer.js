@@ -1,19 +1,40 @@
 import fbIcon from '../Assets/images-removebg-preview (5).png'
 import adiyaIcon from '../Assets/WhatsApp_Image_2023-03-06_at_4.18.56_PM-removebg-preview.png'
+import { FaFacebookSquare } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+
 
 const Footer = () => {
     return (
         <>
             <footer>
                 <div className="row-one">
-                    <a className='logo' href="#">
-                        <img src={adiyaIcon}/>
-                    </a>
+                    <img src={adiyaIcon} />
                     <span>Follow us: </span>
-                    <ul>
-                        <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
-                            <img id='fbIcon' src={fbIcon}/></a>
-                    </ul>
+                    <div className='socials' id='footer'>
+                        <ul>
+                            <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
+                                <FaFacebookSquare />
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
+                                <FaLinkedin />
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
+                                <FaTwitter />
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="https://www.facebook.com/adiyabusinesssolution?mibextid=LQQJ4d">
+                                <FaInstagram />
+                            </a>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="row-two">
@@ -30,10 +51,12 @@ const Footer = () => {
                         <div className="column-3">
                             <h6 className="footer-title">Contacts</h6>
                             <ul>
-                                <li>
+                                <li style={{fontSize: 14, fontWeight: 600}}>
                                     Proposal@adiyabusinesssolution.com
                                 </li>
-                                <li>Contact number-+91 93721 94890 </li>
+                                <li style={{fontSize: 14, fontWeight: 600}}>
+                                    Contact number-+91 93721 94890 
+                                </li>
                             </ul>
                         </div>
 
@@ -41,10 +64,10 @@ const Footer = () => {
                     <div className="column-2">
                         <h6 className="footer-title">subscribe Newsletter </h6>
                         <div className="newsletter">
-                            <input type="text" name="" placeholder="Your Email"/>
-                               <div>
-                               <button type="submit" className='subscribe-btn'>subscribe</button>
-                               </div>
+                            <input type="text" name="" placeholder="Your Email" />
+                            <div>
+                                <button type="submit" className='subscribe-btn'>subscribe</button>
+                            </div>
                         </div>
                         <p className="subscribe-text">subscribe for weekly update we wont send spam </p>
                     </div>
