@@ -4,6 +4,7 @@ import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
 import ofcAminatedPic from '../Assets/services-removebg-preview 2.png'
+import swal from 'sweetalert';
 
 
 const Main = () => {
@@ -21,7 +22,7 @@ const Main = () => {
             .then((res) => {
               console.log(res.data)
               setQueryForm({name: "", email: "", subject: "", phone: "", query: ""})
-              return toast.success("We will get back to you soon!")
+              return swal("Submitted!", "We will get back to you soon!", "success");
             })
             .catch((err) => {
               console.log(err)
