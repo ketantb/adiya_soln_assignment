@@ -1,0 +1,74 @@
+#faq-container{
+    margin: auto;
+    width: 50%;
+}
+
+#faq-container>h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+#faq-container>div{
+    margin-top: 20px;
+}
+
+#faq-container>div>div:first-child{
+    height: 55px;
+    background-color: #f4f6f8;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faq-container>div>div:first-child>p:first-child{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#faq-container>div>div:first-child>p:nth-child(2){
+    font-size: 22px;
+    color: #73a5f1;
+    padding-top: 7px;
+}
+
+#faq-container>div>div:nth-child(2)>p{
+    margin-top: 15px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #525252;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+@media screen and (max-width:900px){
+    #faq-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:640px){
+    #faq-container{
+        width: 90%;
+    }
+    #faq-container>h1{
+        font-size: 28px;
+    }
+    #faq-container>div>div:first-child{
+        
+    }
+    #faq-container>div>div:first-child>p:first-child{
+        font-size: 14px;
+    }
+    #faq-container>div>div:first-child>p:nth-child(2){
+        font-size: 18px;
+    }
+    #faq-container>div>div:nth-child(2)>p{
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

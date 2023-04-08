@@ -7,6 +7,7 @@ import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
 import ofcAnimated from '../Assets/Happy.svg'
 import swal from 'sweetalert';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import FAQ from './faq';
 
 
 const Main = () => {
@@ -399,6 +400,7 @@ const Main = () => {
                     </div>
                 </section>
             </section>
+            <FAQ/>
         </section>
     )
 }

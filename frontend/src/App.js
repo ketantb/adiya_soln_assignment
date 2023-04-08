@@ -6,11 +6,12 @@ import Header from './Components/header';
 import Main from './Components/main';
 import Footer from './Components/footer';
 import Header1 from './Components/header1';
+import Card from './card';
+import FAQ from './Components/faq';
  
 function App()  {
   return (
     <>
-     {/* <Header/> */}
      <Header1/>
      <Main/>
      <Footer/>
