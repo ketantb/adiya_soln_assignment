@@ -1,0 +1,233 @@
+.header-nav{
+    background-color: #fff;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 5px 3px #c8c8ce;
+}
+
+.real-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.extended-nav{
+   
+}
+
+.extended-nav>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.extended-nav>ul>li{
+    font-size: 14px;
+    color: #595959;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 12px;
+}
+
+.extended-nav>ul>li:hover .inner-ul{
+    /* visibility: visible; */
+    display: block;
+    opacity: 1;
+}
+
+.adiya-icon{
+    cursor: pointer;
+}
+
+.header-left-col{
+    align-self: center;
+}
+
+.header-left-col>img{
+    margin-top: 5px;
+}
+
+.header-center-col{
+    width: 50%;
+}
+
+.header-center-col-ul{
+    display: flex;
+    justify-content:space-between;
+    font-size: 14px;
+    /* border: 1px solid black; */
+}
+ 
+.header-center-col-ul>li{
+    list-style: none;
+    padding-top: 25px;
+    /* padding-left: 0.8em; padding-right: 0.8em; */
+    width: 25%;
+    height: 75px;
+    text-align: center;
+    color: #595959;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+a{
+    text-decoration: none;
+    color: #595959;
+}
+span{
+    text-decoration: none;
+}
+
+.inner-ul{
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    background-color: #fff;
+    color: #818084;
+    width: max-content;
+    list-style: none;
+    text-align: left;
+    font-size: small;
+    padding: 7px 7px;
+    border-radius: 5px;
+    /* visibility: hidden; */
+    display: none;
+    opacity: 0;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.inner-ul li{
+    margin: 2px 5px;
+    padding: 10px;
+}
+
+.inner-ul li:hover{
+    /* background-color: #FFA500; */
+    background-image: linear-gradient(to left, #535cf1,#A147E4);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header-center-col>ul>li:hover{
+    color: #595959;
+    background-color: #eeeeee;
+}
+
+.header-center-col>ul>li:hover .inner-ul{
+    /* visibility: visible; */
+    display: block;
+    opacity: 1;
+}
+
+.header-right-col{
+    display: flex;
+    align-items: center;
+}
+
+.login-btn{
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #535cf1,#A147E4);
+    /* color: #595959; */
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px 5px 15px;
+    /* width: 80px; */
+    height: 35px;
+    /* margin-right: 15px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.login-btn:hover{
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to left, #535cf1,#A147E4);
+    color: #FFF;
+}
+
+.header-right-col>p:nth-child(2){
+    color: #fff;
+    background-color: #FFA500;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    height: 35px;
+    cursor: pointer;
+}
+
+#nav-hamburger{
+    border: 1px solid #e0dddd;
+    border-radius: 3px;
+    color: #878787;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        /* background-color: aqua; */
+    }
+    .header-center-col{
+        font-size: 13.5px;
+        justify-content: space-between;
+    }
+    #login-btn {
+        font-size: 13.5px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .header-right-col>p:nth-child(2){
+        font-size: 13.5px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #nav-hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .real-nav{
+        padding-left: 0rem;
+        padding-right: 0rem;
+        /* margin-right: 15px; */
+    }
+    .header-center-col{
+        display: none;
+    }
+    .header-right-col{
+        display: none;
+    }
+    .header-nav{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
