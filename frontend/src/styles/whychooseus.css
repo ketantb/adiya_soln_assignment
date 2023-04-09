@@ -1,0 +1,111 @@
+.why-choose-us-container{
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.why-choose-us-left-block{
+    /* padding-right: 150px; */
+    /* border: 1px solid black; */
+    width: 650px;
+    word-break: keep-all;
+}
+
+.why-choose-us-left-block>div{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.why-choose-us-dummy-bullets{
+    margin-right: 15px;
+    width: 55px;
+    height: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right
+    ,#535cF1,#A147E4);
+    color: #FFF;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Source Serif 4', serif;
+}
+
+.why-choose-us-left-block>div>div{
+    /* margin-left: 25px; */
+    /* padding-right: 25%; */
+}
+
+.why-choose-us-left-block>div>div>h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.why-choose-us-left-block>div>div>p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.why-choose-us-right-block{
+    /* border: 1px solid black; */
+    width: 550px;
+}
+
+.why-choose-us-right-block{
+    background: transparent;
+}
+
+.why-choose-us-right-block{
+    
+}
+
+.why-choose-us-right-block>img{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* background-color: #FFF; */
+}
+
+@media screen and (max-width: 1200px) {
+    .why-choose-us-left-block{
+        width: 55%;
+    }
+
+    .why-choose-us-left-block>h3{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
+    .why-choose-us-left-block>div>div>h4{
+        font-size: 16px;
+    }
+
+    .why-choose-us-dummy-bullets{
+        width: 80px;
+    }
+
+    .why-choose-us-right-block{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .why-choose-us-container{
+        flex-direction: column-reverse;
+        
+    }
+    .why-choose-us-left-block{
+        width: 100%;
+    }
+    .why-choose-us-dummy-bullets{
+        width: 150px;
+    }
+    .why-choose-us-right-block{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}

@@ -13,7 +13,7 @@
 }
 
 #faq-container>div>div:first-child{
-    height: 55px;
+    height: 65px;
     background-color: #f4f6f8;
     padding-left: 20px;
     padding-right: 20px;
@@ -33,6 +33,10 @@
     font-size: 22px;
     color: #73a5f1;
     padding-top: 7px;
+}
+
+#faq-container>div>div:first-child>p:nth-child(2):hover{
+    color: #0066ff;
 }
 
 #faq-container>div>div:nth-child(2)>p{

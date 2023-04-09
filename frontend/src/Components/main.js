@@ -8,6 +8,7 @@ import ofcAnimated from '../Assets/Happy.svg'
 import swal from 'sweetalert';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import FAQ from './faq';
+import WhyChooseUs from './why-choose-us';
 
 
 const Main = () => {
@@ -140,14 +141,14 @@ const Main = () => {
                                     </div>
                                     <div className=" service-content">
                                         <h4 className="service-title">Our Motto </h4>
-                                        <p className="text">WE BELIEVE IN MAKING TECHNOLOGY EASY AND
-                                            ACCESSIBLE,<br />
-                                            STYLISH, ADVANCE AND
-                                            RELEVENT PRODUCT
-                                            MAKE IT AS GRAND A POSSILE
-                                            ALWAYS BE FIRST ONE TO
-                                            INTRODUCE SOMETHING
-                                            NEW IN OUR APPROACH</p>
+                                        <p className="text">we believe in making technology easy and
+                                            accessible,<br />
+                                            stylish, advance and
+                                            relevent product
+                                            make it as grand a possile
+                                            always be first one to
+                                            introduce something
+                                            new in our approach</p>
                                     </div>
                                 </div>
                             </div>
@@ -164,15 +165,15 @@ const Main = () => {
                         Work of ours is focused on emerging technology
                     </h6>
                     <div className="table" id="app-website-dev">
-                        <div className="Ideation-and-Evaluation ">
+                        <div className="Ideation-and-Evaluation">
                             <div className="b-heading">
-                                <h3>App And website Development</h3>
+                                <h3>App and Website Development</h3>
                             </div>
                             <div className="concept">
                                 <span>Bring your product concept to life.</span>
                             </div>
                             <ul>
-                                <li>We are button web & app development company that turns your <br />ideas into button new driving force of
+                                <li>We are web & app development company that turns your <br />ideas into button new driving force of
                                     your business.</li>
                                 <li>We hire brilliant web and mobile app developers to deliver projects on time and maintain<br />
                                     the top-notch code standards.</li>
@@ -363,6 +364,8 @@ const Main = () => {
                         </div>
                     </div>
                 </section>
+                
+                <WhyChooseUs/>
 
                 <section className="calltoact">
                     <div className="parallax">
