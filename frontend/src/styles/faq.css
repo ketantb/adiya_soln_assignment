@@ -30,7 +30,7 @@
 }
 
 #faq-container>div>div:first-child>p:nth-child(2){
-    font-size: 22px;
+    font-size: 24px;
     color: #73a5f1;
     padding-top: 7px;
 }
@@ -59,7 +59,7 @@
         width: 90%;
     }
     #faq-container>h1{
-        font-size: 28px;
+        font-size: 24px;
     }
     #faq-container>div>div:first-child{
         
