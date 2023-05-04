@@ -50,7 +50,7 @@ const Main = () => {
             </div>
 
             <div className="hero-text">
-                <h3>We are india's only Startup Kickstarter Under one Roof Solution.
+                <h3>We are INDIA's only Startup Kickstarter Under one Roof Solution.
 
                 </h3>
                 <h6>
