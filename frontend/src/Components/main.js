@@ -166,7 +166,7 @@ const Main = () => {
                 </section>
 
                 <section id="What we do" className="What-we-do  offset">
-                    <h3> What We offer </h3>
+                    <h3> WHAT WE OFFER </h3>
                     <h6>
                         Work of ours is focused on emerging technology
                     </h6>
