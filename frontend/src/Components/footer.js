@@ -51,10 +51,10 @@ const Footer = () => {
                         <div className="column-3">
                             <h6 className="footer-title">Contacts</h6>
                             <ul>
-                                <li style={{fontSize: 14, fontWeight: 600}}>
+                                <li style={{fontSize: 14, fontWeight: 600, color: '#FFF'}}>
                                     Proposal@adiyabusinesssolution.com
                                 </li>
-                                <li style={{fontSize: 14, fontWeight: 600}}>
+                                <li style={{fontSize: 14, fontWeight: 600, color: '#FFF'}}>
                                     Contact number-+91 93721 94890 
                                 </li>
                             </ul>

@@ -594,7 +594,9 @@ outline: none;
 
 footer {
     margin-top: 55px;
-    background-color: #f4f6f7;
+    /* background-color: #f4f6f7; */
+    /* background-color: #595959; */
+    background-color: rgb(21, 21, 21);
     padding: 7rem;
 }
 
@@ -610,14 +612,16 @@ footer {
 .row-one {
     padding-right: 20px;
     font-size: 26px;
-    color: #6c6c6c;
+    /* color: #6c6c6c; */
+    color: #FFF;
 }
 
 .row-one>span {
     padding-right: 20px;
     font-size: 20px;
     font-weight: 600;
-    color: #6c6c6c;
+    /* color: #6c6c6c; */
+    color: #FFF;
 }
 
 
@@ -657,7 +661,8 @@ footer {
     font-size: 15px;
     font-weight: 700;
     line-height: 18px;
-    color: #6c6c6c;
+    /* color: #6c6c6c; */
+    color: #FFF;
     padding-bottom: 20px;
 
 }
@@ -666,7 +671,8 @@ footer {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    color: #121212;
+    /* color: #121212; */
+    color: #FFF;
 }
 
 .row-two li {
@@ -694,6 +700,7 @@ footer {
     padding: 0 24px;
     border: 0;
     background-color: rgba(33, 33, 33, 0.12);
+    background-color: #FFF;
     font-weight: 500;
     outline: none;
 
@@ -737,6 +744,7 @@ footer {
     margin-top: 5px;
     font-size: 13px;
     margin-left: 5px;
+    color: #FFF;
 }
 
 .subscribe-btn {
