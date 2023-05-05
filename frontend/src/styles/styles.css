@@ -167,12 +167,12 @@ outline: none;
     /* background-image: url('../Assets/Screenshot\ \(560\).png'); */
     /* background-image: url('../Assets/workplace.jpg'); */
     width: 100%;
-    height: 120vh;
+    height: 115vh;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     opacity: 0.9;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .overlay {
@@ -187,7 +187,7 @@ outline: none;
 #home_bg_video {
     margin-top: -50px;
     width: 100%; 
-    height: 80%;
+    height: 100%;
     object-fit: cover;
     position: relative;
     /* border: 3px solid black; */
