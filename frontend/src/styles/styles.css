@@ -214,6 +214,12 @@ outline: none;
     /* border: 1px solid black; */
 }
 
+.hero-text>h3{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 36px;
+}
+
 .hero-text h6 {
     color: #1d1d1d;
 }
@@ -855,6 +861,9 @@ display: none !important;
 
 
 @media (max-width:600px) {
+    .back {
+        height: 80vh;
+    }
     #wrapper {
         margin: 2rem 2rem 2rem 2rem;
     }

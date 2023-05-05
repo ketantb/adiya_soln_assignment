@@ -54,7 +54,9 @@ const Main = () => {
             </div>
 
             <div className="hero-text">
-                <h3>We are INDIA's only Startup Kickstarter Under one Roof Solution.
+                <h3>We are INDIA's only
+                    <span style={{fontWeight: '700', fontSize: "42", color: "#A147E4"}}> Startup </span> 
+                    Kickstarter under one Roof Solution.
 
                 </h3>
                 <h6>
@@ -66,7 +68,7 @@ const Main = () => {
                             <button className="main-btn btn-one">Get in touch</button>
                         </AnchorLink>
                     </li>
-                    <li><button className="main-btn btn-two" href="#">our profile <i className="fa fa-play"></i></button></li>
+                    <li><button className="main-btn btn-two" href="#">Our profile <i className="fa fa-play"></i></button></li>
                 </ul>
             </div>
 
@@ -78,7 +80,7 @@ const Main = () => {
             <section id="wrapper">
                 <span id="our-story"></span>
                 <section id="service" className="service offset ">
-                    <h3> our Story</h3>
+                    <h3> OUR STORY</h3>
                     <h6>
                         Our emerging services that helps other startups to grow and make them enlarge
                     </h6>
@@ -90,7 +92,7 @@ const Main = () => {
                                         <i className="fa fa-web "></i>
                                     </div>
                                     <div className=" service-content" id="Home">
-                                        <h4 className="service-title"> Welcome
+                                        <h4 className="service-title"> WELCOME
                                         </h4>
                                         <p className="text">We at Adiya Business Solution makes
                                             technology Accessible, We are the only Startup
@@ -127,7 +129,7 @@ const Main = () => {
                                         <i className="fa fa-web "></i>
                                     </div>
                                     <div className=" service-content">
-                                        <h4 className="service-title">Our Story</h4>
+                                        <h4 className="service-title">OUR STORY</h4>
                                         <p className="text">We Started All This With Simple Plan of Helping button friend in
                                             need back in our final days of your college, and we learn
                                             Something that working on startup is very painful and
@@ -144,7 +146,7 @@ const Main = () => {
                                         <i className="fa fa-web "></i>
                                     </div>
                                     <div className=" service-content">
-                                        <h4 className="service-title">Our Motto </h4>
+                                        <h4 className="service-title">OUR MOTTO</h4>
                                         <p className="text">we believe in making technology easy and
                                             accessible,<br />
                                             stylish, advance and
