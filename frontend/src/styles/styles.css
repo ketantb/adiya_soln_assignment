@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "poppins", sans-serif;
+    font-family: 'Saira', 'sans-serif';
 }
 
 .offset::before {
@@ -215,9 +215,9 @@ outline: none;
 }
 
 .hero-text>h3{
-    font-family: 'Poppins', sans-serif;
     color: #FFF;
     font-size: 36px;
+    text-transform: uppercase;
 }
 
 .hero-text h6 {
