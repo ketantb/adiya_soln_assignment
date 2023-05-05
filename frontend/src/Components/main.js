@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
+import beachResort from '../Assets/beachResort.mp4'
+import home_bg_video from '../Assets/home_bg_video.mp4'
 import 'react-toastify/dist/ReactToastify.css';
 import wavePicture from '../Assets/Wave_White_bottom_right_shape_01.png'
 // import ofcAnimatedPic from '../Assets/services-removebg-preview 2.png'
@@ -43,10 +45,12 @@ const Main = () => {
                 position={"top-center"}
             />
             <div className="back  offset">
+                {/* < video src={home_bg_video} autoPlay loop muted id="home_bg_video" /> */}
+                <video src={beachResort} autoPlay loop muted id="home_bg_video" />
                 <div className="overlay"></div>
-                <div className="hero-shape">
+                {/* <div className="hero-shape">
                     <img src={wavePicture} />
-                </div>
+                </div> */}
             </div>
 
             <div className="hero-text">
@@ -364,8 +368,8 @@ const Main = () => {
                         </div>
                     </div>
                 </section>
-                
-                <WhyChooseUs/>
+
+                <WhyChooseUs />
 
                 <section className="calltoact">
                     <div className="parallax">
@@ -403,7 +407,7 @@ const Main = () => {
                     </div>
                 </section>
             </section>
-            <FAQ/>
+            <FAQ />
         </section>
     )
 }
