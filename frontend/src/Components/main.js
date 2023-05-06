@@ -54,11 +54,11 @@ const Main = () => {
             </div>
 
             <div className="hero-text">
-                <h3>We are INDIA's only
-                    <span style={{fontWeight: '700', fontSize: "42", color: "#A147E4"}}> Startup </span> 
+                <h1>We are INDIA's only
+                    <span style={{fontWeight: '700', color: "#A147E4"}}> Startup </span> 
                     Kickstarter under one Roof Solution.
 
-                </h3>
+                </h1>
                 <h6>
 
                 </h6>
